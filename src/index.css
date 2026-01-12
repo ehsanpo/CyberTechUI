@@ -1,0 +1,306 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/inter-400.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/fonts/inter-500.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/inter-600.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("/fonts/inter-900.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/jetbrains-mono-400.woff2") format("woff2");
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/fonts/jetbrains-mono-500.woff2") format("woff2");
+}
+
+/* Bai Jamjuree Font Family */
+@font-face {
+    font-family: 'Bai Jamjuree';
+    font-style: normal;
+    font-weight: 200;
+    src: url('/fonts/BaiJamjuree-ExtraLight.woff') format('woff');
+}
+@font-face {
+    font-family: 'Bai Jamjuree';
+    font-style: italic;
+    font-weight: 200;
+    src: url('/fonts/BaiJamjuree-ExtraLightItalic.woff') format('woff');
+}
+@font-face {
+    font-family: 'Bai Jamjuree';
+    font-style: normal;
+    font-weight: 300;
+    src: url('/fonts/BaiJamjuree-Light.woff') format('woff');
+}
+@font-face {
+    font-family: 'Bai Jamjuree';
+    font-style: italic;
+    font-weight: 300;
+    src: url('/fonts/BaiJamjuree-LightItalic.woff') format('woff');
+}
+@font-face {
+    font-family: 'Bai Jamjuree';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/fonts/BaiJamjuree-Regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Bai Jamjuree';
+    font-style: italic;
+    font-weight: 400;
+    src: url('/fonts/BaiJamjuree-Italic.woff') format('woff');
+}
+@font-face {
+    font-family: 'Bai Jamjuree';
+    font-style: normal;
+    font-weight: 500;
+    src: url('/fonts/BaiJamjuree-Medium.woff') format('woff');
+}
+@font-face {
+    font-family: 'Bai Jamjuree';
+    font-style: italic;
+    font-weight: 500;
+    src: url('/fonts/BaiJamjuree-MediumItalic.woff') format('woff');
+}
+@font-face {
+    font-family: 'Bai Jamjuree';
+    font-style: normal;
+    font-weight: 600;
+    src: url('/fonts/BaiJamjuree-SemiBold.woff') format('woff');
+}
+@font-face {
+    font-family: 'Bai Jamjuree';
+    font-style: italic;
+    font-weight: 600;
+    src: url('/fonts/BaiJamjuree-SemiBoldItalic.woff') format('woff');
+}
+@font-face {
+    font-family: 'Bai Jamjuree';
+    font-style: normal;
+    font-weight: 700;
+    src: url('/fonts/BaiJamjuree-Bold.woff') format('woff');
+}
+@font-face {
+    font-family: 'Bai Jamjuree';
+    font-style: italic;
+    font-weight: 700;
+    src: url('/fonts/BaiJamjuree-BoldItalic.woff') format('woff');
+}
+
+/* Chakra Petch Font Family */
+@font-face {
+    font-family: 'Chakra Petch';
+    font-style: normal;
+    font-weight: 300;
+    src: url('/fonts/ChakraPetch-Light.woff') format('woff');
+}
+@font-face {
+    font-family: 'Chakra Petch';
+    font-style: italic;
+    font-weight: 300;
+    src: url('/fonts/ChakraPetch-LightItalic.woff') format('woff');
+}
+@font-face {
+    font-family: 'Chakra Petch';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/fonts/ChakraPetch-Regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Chakra Petch';
+    font-style: italic;
+    font-weight: 400;
+    src: url('/fonts/ChakraPetch-Italic.woff') format('woff');
+}
+@font-face {
+    font-family: 'Chakra Petch';
+    font-style: normal;
+    font-weight: 500;
+    src: url('/fonts/ChakraPetch-Medium.woff') format('woff');
+}
+@font-face {
+    font-family: 'Chakra Petch';
+    font-style: italic;
+    font-weight: 500;
+    src: url('/fonts/ChakraPetch-MediumItalic.woff') format('woff');
+}
+@font-face {
+    font-family: 'Chakra Petch';
+    font-style: normal;
+    font-weight: 600;
+    src: url('/fonts/ChakraPetch-SemiBold.woff') format('woff');
+}
+@font-face {
+    font-family: 'Chakra Petch';
+    font-style: italic;
+    font-weight: 600;
+    src: url('/fonts/ChakraPetch-SemiBoldItalic.woff') format('woff');
+}
+@font-face {
+    font-family: 'Chakra Petch';
+    font-style: normal;
+    font-weight: 700;
+    src: url('/fonts/ChakraPetch-Bold.woff') format('woff');
+}
+@font-face {
+    font-family: 'Chakra Petch';
+    font-style: italic;
+    font-weight: 700;
+    src: url('/fonts/ChakraPetch-BoldItalic.woff') format('woff');
+}
+
+
+
+:root {
+  --font-sans: "Bai Jamjuree", "Inter", sans-serif;
+  --font-mono: "Chakra Petch", "JetBrains Mono", monospace;
+  --radius: 0.65rem;
+  --background: oklch(0.9493 0.007 88.64);
+  --foreground: oklch(0.141 0.005 285.823);
+  --card: oklch(0.9493 0.007 88.64);
+  --card-foreground: oklch(0.141 0.005 285.823);
+  --popover: oklch(0.9493 0.007 88.64);
+  --popover-foreground: oklch(0.141 0.005 285.823);
+  --primary: 0.962 0.211 96.53;
+  --primary-foreground: 0.141 0.005 285.823;
+  --secondary: 0.967 0.001 286.375;
+  --secondary-foreground: 0.21 0.006 285.885;
+  --muted: 0.967 0.001 286.375;
+  --muted-foreground: 0.552 0.016 285.938;
+  --accent: 0.762 0.176 195.45;
+  --accent-foreground: 0.141 0.005 285.823;
+  --destructive: 0.628 0.258 25.68;
+  --destructive-foreground: 0.985 0 0;
+  --border: oklch(0.92 0.004 286.32 / 0.2);
+  --input: oklch(0.92 0.004 286.32 / 0.2);
+  --ring: 0.962 0.211 96.53;
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.141 0.005 285.823);
+  --sidebar-primary: 0.681 0.162 75.834;
+  --sidebar-primary-foreground: oklch(0.987 0.026 102.212);
+  --sidebar-accent: oklch(0.967 0.001 286.375);
+  --sidebar-accent-foreground: oklch(0.21 0.006 285.885);
+  --sidebar-border: oklch(0.92 0.004 286.32);
+  --sidebar-ring: 0.962 0.211 96.53;
+}
+
+.dark {
+  --background: oklch(0.141 0.005 285.823);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.18 0.006 285.885);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.18 0.006 285.885);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: 0.962 0.211 96.53;
+  --primary-foreground: 0.141 0.005 285.823;
+  --secondary: 0.274 0.006 286.033;
+  --secondary-foreground: 0.985 0 0;
+  --muted: 0.274 0.006 286.033;
+  --muted-foreground: 0.705 0.015 286.067;
+  --accent: 0.762 0.176 195.45;
+  --accent-foreground: 0.141 0.005 285.823;
+  --destructive: 0.628 0.258 25.68;
+  --destructive-foreground: 0.985 0 0;
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: 0.962 0.211 96.53;
+  --sidebar: oklch(0.18 0.006 285.885);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: 0.962 0.211 96.53;
+  --sidebar-primary-foreground: 0.141 0.005 285.823;
+  --sidebar-accent: 0.274 0.006 286.033;
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: 0.962 0.211 96.53;
+}
+
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+@layer utilities {
+  .perspective-container {
+    perspective: 2000px;
+  }
+  
+  .rotate-3d {
+    transform: rotateX(10deg) rotateY(-10deg) rotateZ(5deg);
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .rotate-3d:hover {
+    transform: rotateX(5deg) rotateY(-5deg) rotateZ(2deg);
+  }
+
+  .reveal-wrapper {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: reveal 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+
+  @keyframes reveal {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 4px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: oklch(var(--border) / 0.5);
+    border-radius: 2px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: oklch(var(--muted-foreground) / 0.5);
+  }
+  .clip {
+  clip-path: polygon(0 0,25% 0,calc(25% + 9px) 9px,calc(75% - 9px) 9px,75% 0,100% 0,100% 100%,60% 100%,calc(60% - 8px) calc(100% - 8px),calc(40% + 8px) calc(100% - 8px),40% 100%,0 100%);
+}
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
