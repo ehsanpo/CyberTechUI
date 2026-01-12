@@ -27,7 +27,7 @@ export function Installation({ componentName, manualCode }: InstallationProps) {
   }
 
   const fileName = componentMap[componentName] || (componentName.replace(/\s+/g, '') + '.tsx')
-  const rawUrl = `https://raw.githubusercontent.com/ehsanpo/atlasBlocks/main/src/components/${fileName}`
+  const rawUrl = `https://raw.githubusercontent.com/ehsanpo/CyberTechUI/main/src/components/${fileName}`
   
   const bashCommand = `npx shadcn@latest add "${rawUrl}"`
 

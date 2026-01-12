@@ -1,44 +1,38 @@
-<p align="center">
-  <img src="/public/logo-text.png" alt="Atlas Blocks Logo" width="400" />
-</p>
+# CyberTechUI
 
-# Atlas Blocks - Component Library
-
-Welcome to **Atlas 'Content**, a high-performance, accessible, and beautifully designed React component library. Built with **TypeScript**, **Tailwind CSS**, and inspired by the **Shadcn UI** philosophy.
+A modern, accessible React component library built with **TypeScript**, **Tailwind CSS**. Inspired by the **Shadcn UI** philosophy, CyberTechUI provides a collection of customizable, production-ready components for building beautiful user interfaces.
 
 ## ✨ Features
 
-- 🎨 **Modern Aesthetics**: Designs with glassmorphism, smooth transitions, and vibrant OKLCH color palettes.
-- ♿ **Accessible**: Built on top of Radix UI primitives for world-class accessibility.
-- 🛠️ **Fully Customizable**: Modular components that you can easily theme and extend.
-- 📱 **Responsive**: Mobile-first design that looks stunning on every screen size.
-- ⚡ **Developer Friendly**: Comprehensive documentation with live previews and copy-paste installation.
+- 🎨 **Modern Design**: Clean, contemporary components with smooth transitions and thoughtful styling
+- ♿ **Accessible**: Built on Radix UI primitives for world-class accessibility
+- 🛠️ **Fully Customizable**: Modular components that you can easily theme and extend
+- 📱 **Responsive**: Mobile-first design that adapts to every screen size
+- 💻 **TypeScript**: Full type safety and excellent developer experience
+- ⚡ **Developer Friendly**: Interactive documentation with live previews
 
 ## 📦 Components
 
-- **Article List**: Clean grid for blog posts and news.
-- **Banner**: High-impact visual sections with overlays.
-- **CTA (Call to Action)**: Conversion-optimized section with background images.
-- **FAQ**: Interactive accordion for common questions.
-- **Filter Posts**: Dynamic client-side filtering system.
-- **Hero Slider**: Smooth carousel with auto-play.
-- **Premium Hero**: High-end landing page sections with glassmorphism.
-- **Links**: Versatile grid for icons/images and navigation.
-- **Testimonials**: Clean cards for social proof.
-- **Text + Image**: Side-by-side feature layout.
-- **Gallery**: Beautiful grid and slider layouts for images.
-- **Statistic**: Impactful data visualization cards.
-- **Team**: Profile cards for showcasing your team.
-- **Contact Form**: Modern, production-ready form components.
-- **Minimal Header**: Clean, focused navigation for apps.
-- **Header & Footer**: Comprehensive navigation and site mapping.
-- **Parallax Carousel**: Premium swipeable carousel with deep parallax effects.
-- **Product Feature**: Highlighted feature sections for SaaS and E-commerce.
-- **Feature Block**: Flexible list-based feature layouts.
-- **Home Page**: AI-focused landing page with context-aware sections.
-- **Example Landing Page**: Full-featured demo showcasing multiple library components.
-- **Code Block**: Syntax-highlighted code display with copy-to-clipboard.
-- **API Reference**: Professional property documentation for components.
+### Core Components
+
+- **Button**: Versatile button component with multiple variants and sizes
+- **Typography**: Comprehensive text and heading components
+- **Section**: Page section containers with headers
+- **Divider**: Horizontal and vertical dividers
+- **GridLayout**: Flexible grid system for layouts
+- **BentoGrid**: Modern bento-box style grid layouts
+- **Card**: Versatile card component for content display
+- **Checkbox**: Accessible checkbox inputs
+- **Radio**: Radio button groups
+- **FormField**: Form input fields with labels and validation
+- **Tabs**: Tabbed interface component
+- **TextImage**: Combined text and image layout sections
+
+### UI Components
+
+- **Input**: Styled text input fields
+- **Textarea**: Multi-line text input
+- **Button**: Enhanced button primitives
 
 ## 🚀 Getting Started
 
@@ -47,8 +41,8 @@ Welcome to **Atlas 'Content**, a high-performance, accessible, and beautifully d
 Clone the repository and install dependencies:
 
 ```bash
-git clone https://github.com/your-repo/atlas-ui.git
-cd atlas-ui
+git clone https://github.com/ehsanpo/CyberTechUI.git
+cd CyberTechUI
 npm install
 ```
 
@@ -60,21 +54,41 @@ Run the documentation site locally:
 npm run dev
 ```
 
+### Build
+
+Build the project for production:
+
+```bash
+npm run build
+```
+
 ## 🛠️ Tech Stack
 
-- **Framework**: [React](https://reactjs.org/)
+- **Framework**: [React 19](https://reactjs.org/)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
 - **Build Tool**: [Vite](https://vitejs.dev/)
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/)
 - **Icons**: [Lucide React](https://lucide.dev/)
-- **Components**: [Radix UI](https://www.radix-ui.com/)
-- **Animations**: [Tailwind Animate](https://github.com/jamiebuilds/tailwind-animate)
+
+
+## 📖 Documentation
+
+The documentation site includes:
+
+- **Installation Guide**: Step-by-step setup instructions
+- **Component API Reference**: Detailed documentation for each component
+- **Live Previews**: Interactive examples for all components
+- **Code Examples**: Copy-paste ready code snippets
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License.
 
-## 💡 Inspiration
+## 🙏 Acknowledgments
 
-- [Original WordPress Blocks](https://github.com/ehsanpo/Blocks) - My previous work with WordPress blocks.
-
-- [Web-site Downkingo](https://github.com/down-kingo/web-site-downkingo) - Inspiration for several components.
+- Inspired by [Shadcn UI](https://ui.shadcn.com/)
+- Built with components from [Radix UI](https://www.radix-ui.com/)
