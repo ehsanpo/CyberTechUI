@@ -87,6 +87,17 @@ export function TabsPreview() {
   });
 
   const tabsArray = data.tabsString.split(',').map(t => t.trim()).filter(Boolean);
+  const tabsData = tabsArray.length > 0 
+    ? tabsArray.map((label, index) => ({
+        id: `tab-${index}`,
+        label,
+        content: <div className="text-center"><p className="text-lg">Content for {label}</p></div>
+      }))
+    : [{
+        id: 'tab-0',
+        label: 'EMPTY',
+        content: <div className="text-center"><p className="text-lg">Content for EMPTY</p></div>
+      }];
 
   return (
     <DocPage
@@ -113,7 +124,7 @@ export function TabsPreview() {
       }
     >
       <div className="flex items-center justify-center py-12 px-6">
-        <Tabs tabs={tabsArray.length > 0 ? tabsArray : ['EMPTY']} />
+        <Tabs tabs={tabsData} />
       </div>
     </DocPage>
   );
