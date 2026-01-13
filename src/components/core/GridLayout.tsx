@@ -1,35 +1,28 @@
 import { cn } from '../../lib/utils';
 
-// ============================================
-// GridLayout Component Props
-// ============================================
-
 interface GridLayoutProps {
   backgroundColor?: 'primary' | 'background';
   primaryColor?: 'primary' | 'secondary' | 'accent' | 'destructive';
   className?: string;
 }
 
-// ============================================
-// GridLayout - Simple Grid Pattern
-// ============================================
+const bgColors = {
+  primary: 'bg-primary',
+  background: 'bg-background'
+} as const;
+
+const primaryColors = {
+  primary: 'bg-primary',
+  secondary: 'bg-secondary',
+  accent: 'bg-accent',
+  destructive: 'bg-destructive'
+} as const;
 
 export function GridLayout({ 
   backgroundColor = 'background', 
   primaryColor = 'primary',
   className 
 }: GridLayoutProps) {
-  const bgColors = {
-    primary: 'bg-primary',
-    background: 'bg-background'
-  };
-
-  const primaryColors = {
-    primary: 'bg-primary',
-    secondary: 'bg-secondary',
-    accent: 'bg-accent',
-    destructive: 'bg-destructive'
-  };
 
   const secondaryColor = backgroundColor === 'primary' ? 'bg-primary' : 'bg-background';
   const borderColor = backgroundColor === 'primary' ? 'border-background' : 'border-primary';

@@ -1,10 +1,6 @@
 import { Button } from './Button';
 import { cn } from '../../lib/utils';
 
-// ============================================
-// TextImage Component Props
-// ============================================
-
 interface TextImageLink {
   id: number | string;
   text: string;
@@ -23,9 +19,8 @@ interface TextImageProps {
   className?: string;
 }
 
-// ============================================
-// TextImage - Side-by-side content block
-// ============================================
+const CLIP_PATH_RIGHT = 'shape(nonzero from 4.76% 6.96%, line to 95.24% 6.96%, line to 95.24% 93.04%, line to 4.76% 93.04%, line to 4.76% 6.96%, close, move to 4.76% 0%, line to 4.76% 6.96%, line to 0% 6.96%, line to 4.76% 0%, close, move to 0% 93.04%, line to 4.76% 93.04%, line to 4.76% 100%, line to 0% 93.04%, close, move to 95.24% 0%, line to 100% 6.96%, line to 95.24% 6.96%, line to 95.24% 0%, close, move to 95.24% 93.04%, line to 100% 93.04%, line to 95.24% 100%, line to 95.24% 93.04%, close, move to 95.24% 0%, line to 83.93% 0%, line to 82.74% 1.74%, line to 62.5% 1.74%, line to 61.31% 0%, line to 4.76% 0%, line to 4.76% 6.96%, line to 95.24% 6.96%, line to 95.24% 0%, close, move to 4.76% 100%, line to 14.29% 100%, line to 15.48% 98.26%, line to 84.52% 98.26%, line to 85.71% 100%, line to 95.24% 100%, line to 95.24% 93.04%, line to 4.76% 93.04%, line to 4.76% 100%, close, move to 0% 6.96%, line to 4.76% 6.96%, line to 4.76% 93.04%, line to 0% 93.04%, line to 0% 50%, line to 1.19% 48.37%, line to 1.19% 19.35%, line to 0% 17.72%, line to 0% 6.96%, close, move to 100% 6.96%, line to 95.24% 6.96%, line to 95.24% 93.04%, line to 100% 93.04%, line to 100% 6.96%, close)';
+const CLIP_PATH_LEFT = 'shape(nonzero from 95.24% 6.96%, line to 4.76% 6.96%, line to 4.76% 93.04%, line to 95.24% 93.04%, line to 95.24% 6.96%, close, move to 95.24% 0%, line to 95.24% 6.96%, line to 100% 6.96%, line to 95.24% 0%, close, move to 100% 93.04%, line to 95.24% 93.04%, line to 95.24% 100%, line to 100% 93.04%, close, move to 4.76% 0%, line to 0% 6.96%, line to 4.76% 6.96%, line to 4.76% 0%, close, move to 4.76% 93.04%, line to 0% 93.04%, line to 4.76% 100%, line to 4.76% 93.04%, close, move to 4.76% 0%, line to 16.07% 0%, line to 17.26% 1.74%, line to 37.5% 1.74%, line to 38.69% 0%, line to 95.24% 0%, line to 95.24% 6.96%, line to 4.76% 6.96%, line to 4.76% 0%, close, move to 95.24% 100%, line to 85.71% 100%, line to 84.52% 98.26%, line to 15.48% 98.26%, line to 14.29% 100%, line to 4.76% 100%, line to 4.76% 93.04%, line to 95.24% 93.04%, line to 95.24% 100%, close, move to 100% 6.96%, line to 95.24% 6.96%, line to 95.24% 93.04%, line to 100% 93.04%, line to 100% 50%, line to 98.81% 48.37%, line to 98.81% 19.35%, line to 100% 17.72%, line to 100% 6.96%, close, move to 0% 6.96%, line to 4.76% 6.96%, line to 4.76% 93.04%, line to 0% 93.04%, line to 0% 6.96%, close)';
 
 export function TextImage({
   headline,
@@ -36,9 +31,6 @@ export function TextImage({
   backgroundColor,
   className = '',
 }: TextImageProps) {
-  // Original clip paths from index.css
-  const clip2 = 'shape(nonzero from 4.76% 6.96%, line to 95.24% 6.96%, line to 95.24% 93.04%, line to 4.76% 93.04%, line to 4.76% 6.96%, close, move to 4.76% 0%, line to 4.76% 6.96%, line to 0% 6.96%, line to 4.76% 0%, close, move to 0% 93.04%, line to 4.76% 93.04%, line to 4.76% 100%, line to 0% 93.04%, close, move to 95.24% 0%, line to 100% 6.96%, line to 95.24% 6.96%, line to 95.24% 0%, close, move to 95.24% 93.04%, line to 100% 93.04%, line to 95.24% 100%, line to 95.24% 93.04%, close, move to 95.24% 0%, line to 83.93% 0%, line to 82.74% 1.74%, line to 62.5% 1.74%, line to 61.31% 0%, line to 4.76% 0%, line to 4.76% 6.96%, line to 95.24% 6.96%, line to 95.24% 0%, close, move to 4.76% 100%, line to 14.29% 100%, line to 15.48% 98.26%, line to 84.52% 98.26%, line to 85.71% 100%, line to 95.24% 100%, line to 95.24% 93.04%, line to 4.76% 93.04%, line to 4.76% 100%, close, move to 0% 6.96%, line to 4.76% 6.96%, line to 4.76% 93.04%, line to 0% 93.04%, line to 0% 50%, line to 1.19% 48.37%, line to 1.19% 19.35%, line to 0% 17.72%, line to 0% 6.96%, close, move to 100% 6.96%, line to 95.24% 6.96%, line to 95.24% 93.04%, line to 100% 93.04%, line to 100% 6.96%, close)';
-  const clip3 = 'shape(nonzero from 95.24% 6.96%, line to 4.76% 6.96%, line to 4.76% 93.04%, line to 95.24% 93.04%, line to 95.24% 6.96%, close, move to 95.24% 0%, line to 95.24% 6.96%, line to 100% 6.96%, line to 95.24% 0%, close, move to 100% 93.04%, line to 95.24% 93.04%, line to 95.24% 100%, line to 100% 93.04%, close, move to 4.76% 0%, line to 0% 6.96%, line to 4.76% 6.96%, line to 4.76% 0%, close, move to 4.76% 93.04%, line to 0% 93.04%, line to 4.76% 100%, line to 4.76% 93.04%, close, move to 4.76% 0%, line to 16.07% 0%, line to 17.26% 1.74%, line to 37.5% 1.74%, line to 38.69% 0%, line to 95.24% 0%, line to 95.24% 6.96%, line to 4.76% 6.96%, line to 4.76% 0%, close, move to 95.24% 100%, line to 85.71% 100%, line to 84.52% 98.26%, line to 15.48% 98.26%, line to 14.29% 100%, line to 4.76% 100%, line to 4.76% 93.04%, line to 95.24% 93.04%, line to 95.24% 100%, close, move to 100% 6.96%, line to 95.24% 6.96%, line to 95.24% 93.04%, line to 100% 93.04%, line to 100% 50%, line to 98.81% 48.37%, line to 98.81% 19.35%, line to 100% 17.72%, line to 100% 6.96%, close, move to 0% 6.96%, line to 4.76% 6.96%, line to 4.76% 93.04%, line to 0% 93.04%, line to 0% 6.96%, close)';
 
   return (
     <section
@@ -47,7 +39,6 @@ export function TextImage({
     >
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:items-center gap-8 md:gap-12 lg:gap-16">
-          {/* Image Column */}
           <div className={cn(
             "relative min-h-[350px] md:min-h-[450px] lg:min-h-[600px] overflow-hidden group",
             imageOnLeft ? "md:order-1" : "md:order-2"
@@ -56,15 +47,12 @@ export function TextImage({
               <img
                 src={image}
                 alt={headline || ''}
-                className={cn(
-                  "absolute inset-0 h-full w-full object-cover transition-transform duration-[3000ms] group-hover:scale-105"
-                )}
-                style={{ clipPath: imageOnLeft ? clip3 : clip2 }}
+                className="absolute inset-0 h-full w-full object-cover transition-transform duration-[3000ms] group-hover:scale-105"
+                style={{ clipPath: imageOnLeft ? CLIP_PATH_LEFT : CLIP_PATH_RIGHT }}
               />
             )}
           </div>
 
-          {/* Text Column */}
           <div className={cn(
             "flex flex-col justify-center text-left",
             imageOnLeft ? "md:order-2" : "md:order-1"

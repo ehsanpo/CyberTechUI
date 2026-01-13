@@ -7,21 +7,21 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
 }
 
+const buttonColors = {
+  default: 'bg-black text-white hover:bg-gray-800 active:bg-gray-950',
+  primary: 'bg-black text-primary hover:bg-gray-800 hover:border-b-primary/80 border-b-4 border-b-primary',
+  danger: 'bg-destructive text-destructive-foreground hover:bg-destructive/90 active:bg-destructive/80 border-b-2 border-destructive',
+  secondary: 'bg-secondary text-secondary-foreground hover:bg-secondary/80 active:bg-secondary/60 border-b-2 border-secondary',
+  accent: 'bg-accent text-accent-foreground hover:bg-accent/80 active:bg-accent/60 border-b-2 border-accent',
+} as const;
+
 export function Button({ 
   color = 'default', 
   shape = 'bu1', 
   children, 
-  onClick, 
   className,
   ...props 
 }: ButtonProps) {
-  const colors = {
-    default: 'bg-black text-white hover:bg-gray-800 hover:scale-105 active:scale-95 active:bg-gray-950 border-b-2 border-black',
-    primary: 'cd p bg-black text-primary hover:bg-gray-800 hover:border-b-primary/80 hover:scale-105 active:scale-95 border-b-2 border-black border-b-4 border-b-primary',
-    danger: 'bg-destructive text-destructive-foreground hover:bg-destructive/90 hover:scale-105 active:scale-95 active:bg-destructive/80 border-b-2 border-destructive',
-    secondary: 'bg-secondary text-secondary-foreground hover:bg-secondary/80 hover:scale-105 active:scale-95 active:bg-secondary/60 border-b-2 border-secondary',
-    accent: 'bg-accent text-accent-foreground hover:bg-accent/80 hover:scale-105 active:scale-95 active:bg-accent/60 border-b-2 border-accent',
-  };
 
   return (
     <>
@@ -35,10 +35,9 @@ export function Button({
         .bu7 { clip-path: shape(from 0% 0%,hline by 10.96%,vline by 100%,hline to 0%,vline to 75%,line by 2.74% -6.25%,vline to 31.25%,line by -2.74% -6.25%,vline to 0%,close,move to 10.96% 0%,hline by 75.34%,vline by 100%,hline to 10.96%,close,move to 97.26% 0%,hline by -10.96%,vline by 100%,hline by 10.96%,vline to 75%,line by 2.74% -6.25%,vline to 31.25%,line by -2.74% -6.25%,vline to 0%,close); }
       `}</style>
       <button
-        onClick={onClick}
         className={cn(
-          "px-6 py-2 font-bold uppercase text-sm transition-all duration-200",
-          colors[color],
+          "px-6 py-2 font-bold uppercase text-sm transition-all duration-200 hover:scale-105 active:scale-95",
+          buttonColors[color],
           shape,
           className
         )}

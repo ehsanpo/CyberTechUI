@@ -1,10 +1,6 @@
 import { useState } from 'react';
 import { cn } from '../../lib/utils';
 
-// ============================================
-// Tabs Component Props
-// ============================================
-
 interface TabsProps {
   tabs: { id: string, label: string, content: React.ReactNode }[];
   className?: string;
@@ -61,9 +57,7 @@ export function Tabs({ tabs, className }: TabsProps) {
         ))}
       </div>
       <div className="relative p-6 border border-primary/20 bg-card rounded-sm overflow-hidden min-h-[300px] flex flex-col justify-center">
-        {/* Glow effect */}
         <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-primary/50 to-transparent" />
-        
         {tabs[activeTab].content}
       </div>
     </div>

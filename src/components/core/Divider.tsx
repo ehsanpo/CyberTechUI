@@ -1,9 +1,5 @@
 import { cn } from '../../lib/utils';
 
-// ============================================
-// Divider Component Props
-// ============================================
-
 interface DividerProps {
   variant?: 'solid' | 'dashed' | 'dotted';
   color?: 'primary' | 'secondary' | 'accent' | 'muted';
@@ -12,9 +8,38 @@ interface DividerProps {
   text?: string;
 }
 
-// ============================================
-// Divider - Line Separator with SVG Decoration
-// ============================================
+const colorClasses = {
+  primary: 'border-primary',
+  secondary: 'border-secondary',
+  accent: 'border-accent',
+  muted: 'border-muted-foreground',
+} as const;
+
+const textColorClasses = {
+  primary: 'text-primary-foreground bg-primary',
+  secondary: 'text-secondary-foreground bg-secondary',
+  accent: 'text-accent-foreground bg-accent',
+  muted: 'text-foreground bg-muted',
+} as const;
+
+const thicknessClasses = {
+  1: 'border-b',
+  2: 'border-b-2',
+  4: 'border-b-4',
+} as const;
+
+const fillColorClasses = {
+  primary: 'fill-primary',
+  secondary: 'fill-secondary',
+  accent: 'fill-accent',
+  muted: 'fill-muted-foreground',
+} as const;
+
+const borderStyles = {
+  solid: 'border-solid',
+  dashed: 'border-dashed',
+  dotted: 'border-dotted',
+} as const;
 
 export function Divider({
   variant = 'solid',
@@ -23,43 +48,6 @@ export function Divider({
   className = '',
   text = '',
 }: DividerProps) {
-  // Border color classes using Shadcn variables
-  const colorClasses = {
-    primary: 'border-primary',
-    secondary: 'border-secondary',
-    accent: 'border-accent',
-    muted: 'border-muted-foreground',
-  };
-
-  // Text/background color classes for text labels
-  const textColorClasses = {
-    primary: 'text-primary-foreground bg-primary',
-    secondary: 'text-secondary-foreground bg-secondary',
-    accent: 'text-accent-foreground bg-accent',
-    muted: 'text-foreground bg-muted',
-  };
-
-  // Thickness classes
-  const thicknessClasses = {
-    1: 'border-b',
-    2: 'border-b-2',
-    4: 'border-b-4',
-  };
-
-  // SVG fill color classes
-  const fillColorClasses = {
-    primary: 'fill-primary',
-    secondary: 'fill-secondary',
-    accent: 'fill-accent',
-    muted: 'fill-muted-foreground',
-  };
-
-  // Border variant styles
-  const borderStyles = {
-    solid: 'border-solid',
-    dashed: 'border-dashed',
-    dotted: 'border-dotted',
-  };
 
   return (
     <div
