@@ -31,7 +31,7 @@ export function Tabs({ tabs, className }: TabsProps) {
   };
 
   return (
-    <div className="flex flex-col gap-8">
+    <div className="flex flex-col gap-1">
       <style>{`
         .bu1 { clip-path: shape(from 10.53% 100%,line to 0% 75.38%,vline to 0%,hline by 10.53%,vline by 100%,close,move by 0% -100%,hline by 78.95%,vline by 100%,hline to 10.53%,close,move by 89.47% 0%,hline by -10.53%,vline by 100%,hline by 10.53%,vline to 75%,line by -2.63% -6.25%,vline to 31.25%,line by 2.63% -6.25%,vline to 0%,close); }
         .bu2 { clip-path: shape(from 2.67% 0%,hline by 10.67%,vline by 100%,hline to 2.67%,vline to 75%,line by -2.67% -6.25%,vline to 31.25%,line by 2.67% -6.25%,vline to 0%,close,move to 13.33% 0%,hline by 73.33%,vline by 100%,hline to 13.33%,close,move to 97.33% 0%,hline by -10.67%,vline by 100%,hline by 10.67%,vline to 75%,line by 2.67% -6.25%,vline to 31.25%,line by -2.67% -6.25%,vline to 0%,close); }
@@ -56,7 +56,7 @@ export function Tabs({ tabs, className }: TabsProps) {
           </button>
         ))}
       </div>
-      <div className="relative p-6 border border-primary/20 bg-card rounded-sm overflow-hidden min-h-[300px] flex flex-col justify-center">
+      <div className="clip relative px-6 py-8 border border-primary/20 bg-card rounded-sm overflow-hidden min-h-[300px] flex flex-col justify-center">
         <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-primary/50 to-transparent" />
         {tabs[activeTab].content}
       </div>

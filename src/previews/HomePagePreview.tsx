@@ -87,7 +87,7 @@ export function HomePagePreview({ onBack }: { onBack?: () => void, onDocsClick?:
       <TextImage 
         headline="CyberTech UI Library"
         bodyText="A collection of premium React components designed for the future. Built with Tailwind CSS, OKLCH colors, and agentic workflows in mind."
-        image="/CyberTechUI/public/logo.png"
+        image="/CyberTechUI/logo.png"
         imageOnLeft={false}
         links={[
           { id: 1, text: 'EXPLORE COMPONENTS', url: '#', color: 'primary', shape: 'bu1' },
@@ -185,9 +185,9 @@ export function HomePagePreview({ onBack }: { onBack?: () => void, onDocsClick?:
                         Enable autonomous agents to build entire layouts using CyberTech's standardized component protocols. Optimized for chain-of-thought processing and visual verification.
                       </Typography.BodyLarge>
                       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
-                        <Card title="AUTONOME" subtitle="Self-correcting UI layouts based on user requirements." />
-                        <Card title="CHAIN-LINK" subtitle="Sequential building of complex dashboard interfaces." />
-                        <Card title="PROTO-TYPE" subtitle="Instant high-fidelity prototyping via natural language." />
+                        <Card shape='clip2' title="AUTONOME" subtitle="Self-correcting UI layouts based on user requirements." />
+                        <Card shape='clip' title="CHAIN-LINK" subtitle="Sequential building of complex dashboard interfaces." />
+                        <Card shape='clip3' title="PROTO-TYPE" subtitle="Instant high-fidelity prototyping via natural language." />
                       </div>
                     </div>
                   )
