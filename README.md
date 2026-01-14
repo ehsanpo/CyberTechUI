@@ -5,7 +5,7 @@
   <p><em>Production-ready React components. Copy, paste, own.</em></p>
 </div>
 
-A TypeScript component library built on Radix UI and Tailwind CSS. No package dependencies—just copy the components you need into your codebase and customize them freely.
+A TypeScript component library built on React and Tailwind CSS. No package dependencies—just copy the components you need into your codebase and customize them freely.
 
 ## Why This Exists
 
@@ -71,9 +71,9 @@ export default function App() {
 ## Screenshots
 
 <div align="center flex">
-  <img src="./CyberTechUI/demo1.png" alt="Tab Component" width="800"/>
+  <img src="/CyberTechUI/demo1.png" alt="Tab Component" width="800"/>
   
-  <img src="./CyberTechUI/demo2.png" alt="Bento Grid Example" width="800"/>
+  <img src="/CyberTechUI/demo2.png" alt="Bento Grid Example" width="800"/>
 </div>
 
 ## Links
