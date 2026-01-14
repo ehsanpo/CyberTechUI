@@ -1,7 +1,7 @@
 # CyberTechUI
 
 <div align="center">
-  <img src="./public/logo.svg" alt="CyberTechUI Logo" width="200"/>
+  <img src="./public/logo.png" alt="CyberTechUI Logo" width="200"/>
   <p><em>Production-ready React components. Copy, paste, own.</em></p>
 </div>
 
