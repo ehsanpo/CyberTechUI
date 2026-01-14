@@ -130,7 +130,7 @@ export function SectionHeader({
 }: SectionHeaderProps) {
 
   return (
-    <div className={cn('space-y-4', alignments[align], className)}>
+    <div className={cn('space-y-4', sectionAlignments[align], className)}>
       {eyebrow && (
         <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
           {eyebrow}
