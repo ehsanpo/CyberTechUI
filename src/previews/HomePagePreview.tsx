@@ -87,7 +87,7 @@ export function HomePagePreview({ onBack }: { onBack?: () => void, onDocsClick?:
       <TextImage 
         headline="CyberTech UI Library"
         bodyText="A collection of premium React components designed for the future. Built with Tailwind CSS, OKLCH colors, and agentic workflows in mind."
-        image="public/logo.png"
+        image="/CyberTechUI/public/logo.png"
         imageOnLeft={false}
         links={[
           { id: 1, text: 'EXPLORE COMPONENTS', url: '#', color: 'primary', shape: 'bu1' },
@@ -121,7 +121,7 @@ export function HomePagePreview({ onBack }: { onBack?: () => void, onDocsClick?:
       <TextImage 
         headline="Modern Color Science"
         bodyText="Utilizing OKLCH and CSS Variables to provide a perceptually uniform experience across all lighting conditions. Your UI looks exactly as intended, every time."
-        image="/color-science.png"
+        image="/CyberTechUI/color-science.png"
         imageOnLeft={true}
         links={[
           { id: 3, text: 'LEARN MORE', url: '#', color: 'accent', shape: 'bu2' }

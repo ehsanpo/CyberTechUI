@@ -55,7 +55,7 @@ export function Sidebar({
             onClick={() => onSelectComponent('home')}
             className="flex items-center gap-3 mb-1 cursor-pointer hover:opacity-80 active:scale-95 transition-all"
           >
-            <img src="/logo.png" alt="CyberTechUI Logo" className="h-6 w-6 object-contain" />
+            <img src="/CyberTechUI/logo.png" alt="CyberTechUI Logo" className="h-6 w-6 object-contain" />
             {!isCollapsed && <h2 className="text-lg font-semibold truncate">CyberTech UI</h2>}
           </div>
           {!isCollapsed && (
