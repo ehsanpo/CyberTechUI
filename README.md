@@ -71,9 +71,9 @@ export default function App() {
 ## Screenshots
 
 <div align="center flex">
-  <img src="/CyberTechUI/demo1.png" alt="Tab Component" width="800"/>
+  <img src="/CyberTechUI/public/demo1.png" alt="Tab Component" width="800"/>
   
-  <img src="/CyberTechUI/demo2.png" alt="Bento Grid Example" width="800"/>
+  <img src="/CyberTechUI/public/demo2.png" alt="Bento Grid Example" width="800"/>
 </div>
 
 ## Links
